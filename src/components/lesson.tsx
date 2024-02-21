@@ -1,9 +1,10 @@
 import hydrate from "next-mdx-remote/hydrate";
 import { useState } from "react";
 
-import { Aside, AsideContext } from "./aside";
 import { Lesson as LessonProp } from "@/lib/lessons";
 import { components } from "@/lib/markdown";
+
+import { Aside, AsideContext } from "../components/Aside";
 
 export const Lesson = ({ lesson }: { lesson: LessonProp }) => {
   if (!lesson.content) return null;

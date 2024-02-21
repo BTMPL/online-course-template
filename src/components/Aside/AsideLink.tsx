@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { CAside } from "./aside-context";
+import { CAside } from "./AsideContex";
 
-export const AsideLink = ({
+export default ({
   children,
   slug,
 }: {

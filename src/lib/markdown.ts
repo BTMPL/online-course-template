@@ -3,7 +3,7 @@ import html from 'remark-html'
 
 import { CodeBlock } from "../components/code-block";
 import { Note } from "../components/note";
-import { AsideLink } from "../components/aside-link";
+import { AsideLink } from '@/components/Aside';
 
 export const markdownToHtml = async (markdown: string) => {
   const result = await remark().use(html).process(markdown)
