@@ -1,14 +1,8 @@
-import { createContext, useEffect, useState, useContext } from "react";
+import { useEffect, useState, useContext } from "react";
 import hydrate from "next-mdx-remote/hydrate";
 import { Lesson } from "@/lib/lessons";
 import { components } from "@/lib/markdown";
-
-const CAside = createContext({
-  aside: "",
-  toggle: (slug: string) => {
-    alert("!");
-  },
-});
+import { CAside } from "./aside-context";
 
 export const Aside = ({ aside }: { aside: Lesson }) => {
   if (!aside.content) return null;
