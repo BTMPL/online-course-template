@@ -1,6 +1,6 @@
 import Head from "next/head";
-import { Footer } from "./footer";
-import Header from "./header";
+import Footer from "./Footer";
+import Header from "./Header";
 
 type Props = {
   children: React.ReactNode;
@@ -8,7 +8,7 @@ type Props = {
   widthClass?: string;
 };
 
-const Layout = ({
+export default ({
   children,
   title,
   widthClass = "w-full max-w-3xl",
@@ -31,5 +31,3 @@ const Layout = ({
     <Footer />
   </div>
 );
-
-export default Layout;

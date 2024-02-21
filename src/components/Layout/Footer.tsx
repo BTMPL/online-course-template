@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export const Footer = () => {
+export default () => {
   return (
     <footer className="mt-16 lg:mt-64 bg-pink-900 text-pink-200 md:p-16 sm:p-8 p-4 leading-7">
       <p className="text-2xl mb-4">

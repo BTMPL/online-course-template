@@ -1,8 +1,7 @@
 import remark from 'remark'
 import html from 'remark-html'
 
-import { CodeBlock } from "../components/code-block";
-import { Note } from "../components/note";
+import { CodeBlock, Note } from "../components/Markdown";
 import { AsideLink } from '@/components/Aside';
 
 export const markdownToHtml = async (markdown: string) => {

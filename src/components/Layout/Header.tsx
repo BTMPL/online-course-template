@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Header = () => {
+export default () => {
   return (
     <header className="flex items-center justify-between p-2 border-b border-gray-200">
       <Link href="/" className="text-pink-800 text-lg flex space-x-2">
@@ -18,5 +18,3 @@ const Header = () => {
     </header>
   );
 };
-
-export default Header;

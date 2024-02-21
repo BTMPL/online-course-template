@@ -1,6 +1,6 @@
-import { BrowserMockup } from "../components/browser-mockup";
-import Layout from "../components/layout";
-import { Lesson } from "../components/lesson";
+import BrowserMockup from "../components/BrowserMockup";
+import { Layout } from "../components/Layout";
+import Lesson from "../components/Lesson";
 import { getLessonContent, Lesson as LessonProps } from "../lib/lessons";
 
 const Home = ({ lesson }: { lesson: LessonProps }) => {

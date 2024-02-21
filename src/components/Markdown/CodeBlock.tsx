@@ -18,7 +18,7 @@ type Props = {
   metastring?: string;
   children: string;
 };
-export const CodeBlock = ({
+export default ({
   className,
   metastring,
   children,

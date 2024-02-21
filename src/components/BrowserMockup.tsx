@@ -1,4 +1,4 @@
-export const BrowserMockup = ({
+export default ({
   title,
   children,
 }: {

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Fragment } from "react";
-import Layout from "../../components/layout";
+import { Layout } from "../../components/Layout";
 import { Lesson, getLessons } from "../../lib/lessons";
 
 export const getStaticProps = async () => {

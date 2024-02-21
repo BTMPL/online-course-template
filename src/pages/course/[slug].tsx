@@ -1,11 +1,11 @@
 import Link from "next/link";
-import Layout from "../../components/layout";
+import { Layout } from "../../components/Layout";
 import {
   Lesson as LessonProps,
   getLessonContent,
   getLessons,
 } from "../../lib/lessons";
-import { Lesson } from "../../components/lesson";
+import Lesson from "../../components/Lesson";
 
 export async function getStaticProps({ params }: { params: { slug: string } }) {
   const lesson = await getLessonContent(params.slug);
