@@ -76,7 +76,7 @@ const Home = ({ lesson }: { lesson: LessonProps }) => {
 
 export async function getStaticProps() {
   return {
-    props: { lesson: await getLessonContent("01.01-first-sublesson") },
+    props: { lesson: await getLessonContent("00-welcome") },
   };
 }
 
